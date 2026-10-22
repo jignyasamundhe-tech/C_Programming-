@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+void display(int iNo)
+{
+    
+     if(iNo<=10)
+     {
+        printf("Hello\n");                   
+      }
+     else
+     {
+        printf("Demo\n");
+     }
+}
+
+int main()
+{
+    int iValue=1;
+
+    printf("Enter Number:\n");
+    scanf("%d",&iValue);
+
+    display(iValue);
+
+ return EXIT_SUCCESS;
+}
