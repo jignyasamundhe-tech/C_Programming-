@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int CountOdd( int iNo)
+{
+    int iCnt = 0;
+    int iCount = 0;
+  
+     if(iNo < 0)
+    {
+        iNo = -iNo;
+    }
+    
+   while(iNo > 0)
+    {  
+        iCnt =iNo % 10;
+        if(iCnt % 2 == 1)
+        {
+               iCount++;
+        }
+        iNo = iNo / 10;
+       }
+return iCount;
+    
+}
+int main()
+{
+    int iValue = 0;
+    int iRet =0;
+
+    printf("enter the values:\n");
+    scanf("%d",&iValue);
+
+    iRet =CountOdd(iValue);
+    printf("number of odd numbers are: %d\n",iRet);
+
+    return EXIT_SUCCESS;
+}
